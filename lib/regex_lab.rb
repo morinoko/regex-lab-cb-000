@@ -1,5 +1,8 @@
 def starts_with_a_vowel?(word)
-  #first attempt: word.match(/\A[aeiou]/i) ? true : false
+  # first attempt: 
+  # word.match(/\A[aeiou]/i) ? true : false
+
+  # improved:
   word.match(/^[aeiou]\w*/i) ? true : false
 end
 
