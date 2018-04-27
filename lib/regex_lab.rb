@@ -22,4 +22,7 @@ def valid_phone_number?(phone)
   # Allow parentheses for area code
   # Allow spaces or dashes between phone number groups
   phone.match(/^\(*\d{3}\)*\s*-*\d{3}\s*-*\d{4}$/) ? true : false
+
+  # From solution:
+  # phone.match(/([0-9] *?){10}|(\([0-9]{3}\)(([0-9]{3}-[0-9]{4})|[0-9]{7})\b)/) ? true : false
 end
